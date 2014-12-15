@@ -1,0 +1,7 @@
+void setup(){
+blackground(0);
+}
+
+void draw(){
+
+}

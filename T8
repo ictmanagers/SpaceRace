@@ -1,0 +1,8 @@
+Img PImage;
+void setup() {
+  img = loadImage ("vessel.pdg");
+  
+}
+void draw() {
+  image(img, 1,1);
+}

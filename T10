@@ -1,0 +1,10 @@
+int score= 0;
+
+void setup() {
+    size(300,300);
+    }
+ void draw() {
+     background(100,100,100); 
+       
+     text("level: " + score,250,280);
+     }

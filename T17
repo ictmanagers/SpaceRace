@@ -1,0 +1,28 @@
+(5 sloc)  0.049 kb RawBlameHistory   
+void setup(){
+blackground(0);
+}
+
+void draw(){
+
+}
+void setup(){}
+
+
+void draw(){
+  background(0);
+textSize(15);
+text("SPACE RACE", 5, 30); 
+fill(255, 255, 255);
+}
+int x;
+int y;
+void setup(){
+  background(0);
+  size(100,100);
+}
+void draw(){
+  x=int(random(0,100));
+  y=int(random(0,100));
+  ellipse(x,y,2,2);
+}

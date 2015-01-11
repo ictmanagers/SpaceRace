@@ -13,12 +13,12 @@ void draw(){
     textSize(30);
     delay(1000);
     if(s<=59){
-        text(m+":"+s,widht/2, height/2);
+        text(m+":"+s,width/2,height/2);
         s = s + 1;
         }
         else{
         m = m + 1;
         s = 0;
-        text(m+":"+s,widht/2, height/2);
+        text(m+":"+s,width/2,height/2);
              }
             }

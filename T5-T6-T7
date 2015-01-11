@@ -1,0 +1,17 @@
+int x;
+int y;
+
+void setup(){
+	background(0);
+	size(300,300);
+	}
+   
+void draw(){  
+	background(0);
+	textSize(15);
+	text("SPACE RACE", 5, 30);
+	fill(255, 255, 255);
+	x=int(random(0,300)); 
+       	y=int(random(0,300)); 
+        	ellipse(x,y,5,5);
+	}

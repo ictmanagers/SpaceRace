@@ -1,0 +1,32 @@
+
+int y=500;
+int z=950;
+PImage photo;
+
+void setup()
+{
+size(1000,1000);
+
+photo=loadImage("Vessel.png");
+}
+void draw(){
+background(0);
+ image(photo,y,z);
+}
+
+void keyPressed()
+  {
+   if (key == CODED)
+{
+    if (keyCode == DOWN)
+    {
+     z=z+6;
+    }
+
+
+
+
+
+   } 
+
+

@@ -1,0 +1,15 @@
+PImage bg;
+int y;
+
+void setup() {
+  size(640, 360);
+  
+  bg = loadImage("vessel.jpg");
+}
+
+void draw() {
+  background(0);
+  
+  stroke(226, 204, 0);
+ 
+}

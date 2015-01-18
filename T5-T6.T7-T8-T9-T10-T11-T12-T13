@@ -1,0 +1,63 @@
+int score= 0;
+int level= 0;
+int a= 0;
+int b= 0;
+int shipX=150;
+int shipY=240;
+
+
+PImage ship;
+PImage bg;
+
+
+void setup(){
+    size(300,300);
+     ship=loadImage("rocket.png");
+    bg=loadImage("space.png");
+    
+  }   
+  void draw(){          
+background(bg);
+  image(ship,shipX,shipY,30,50);
+  counter=counter+1;
+  fill(0);
+
+
+textSize(40);        
+text("SPACE RACE", 15, 30);        
+fill(255, 255, 255); 
+textSize(15);
+text("level: " + score,240,280);  
+text("score: " + score,240,260);
+if(keyPressed==true){
+   shipY=shipY-3;
+ }
+
+if((keyPressed==false)&&(shipY>240)){
+  shipY=shipY;
+}
+
+if(keyPressed==false){
+   shipY=shipY+3;
+ }
+  
+if(shipY==0){
+  score=score+1;
+  shipY=240;
+}
+
+if(counter>1800){
+  shipX=150;
+  shipY=240;
+}
+  
+ellipse(a,70,10,10);
+a=a-6;
+if(a<0){
+   a=300;} 
+ellipse(b,200,10,10);
+b=b+6;
+if(b>300){ 
+    b=0;} 
+    
+} 

@@ -1,0 +1,32 @@
+int score= 0;
+int level= 0;
+int a= 0;
+int b= 0;
+
+
+void setup(){
+    size(300,300);
+    background(0);
+    
+  }   
+  void draw(){          
+background(0);
+
+
+textSize(40);        
+text("SPACE RACE", 15, 30);        
+fill(255, 255, 255); 
+textSize(15);
+text("level: " + score,240,280);  
+text("score: " + score,240,260);  
+ellipse(a,70,10,10);
+a=a-6;
+if(a<0){
+   a=300;} 
+ellipse(b,200,10,10);
+b=b+6;
+if(b>300){ 
+    b=0;} 
+    
+} 
+ 

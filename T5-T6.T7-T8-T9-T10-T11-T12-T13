@@ -13,6 +13,7 @@ ship=loadImage("rocket.png");
 
 }
 void draw(){
+
 background(0);
 image(ship,shipX,shipY,30,50);
 counter=counter+1;
@@ -23,8 +24,8 @@ text("SPACE RACE", 15, 30);
 fill(255, 255, 255);
 
 textSize(15);
-text("level: " + score,240,280);
-text("score: " + score,240,260);
+text("level: " + score,220,280);
+text("score: " + score,220,260);
 
 if(keyPressed==true){
 shipY=shipY-3;

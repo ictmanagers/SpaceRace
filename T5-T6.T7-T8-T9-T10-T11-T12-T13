@@ -1,16 +1,20 @@
 int score= 0;
-int level= 0;
+int level= 1;
 int a= 0;
 int b= 0;
 int c= 0;
 int d= 0;
-int shipX=150;
-int shipY=240;
+int e= 0;
+int f= 0;
+int g= 0;
+int h= 0;
+int shipX=300;
+int shipY=540;
 int counter=0;
 PImage ship;
 
 void setup(){
-    size(300,300);
+    size(600,600);
     ship=loadImage("rocket.png");
     }
     
@@ -19,14 +23,14 @@ background(0);
 image(ship,shipX,shipY,30,50);
 counter=counter+1;
 fill(100,200,100);
-textSize(40);
-text("SPACE RACE", 15, 30);
-fill(255, 255, 255);
-textSize(15);
-text("level: " + score,220,280);
-text("score: " + score,220,260);
+textSize(60);
+text("SPACE RACE",120 ,50);
+fill(100, 200, 100);
+textSize(20);
+text("level: " + level,510,580);
+text("score: " + score,510,560);
 if(keyPressed==true){
-    shipY=shipY-3;
+    shipY=shipY-6;
     }
     if((keyPressed==false)&&(shipY<0))
     {
@@ -34,42 +38,73 @@ if(keyPressed==true){
     }
     if(keyPressed==false)
     {
-    shipY=shipY-3;
+    shipY=shipY-6;
     }
     if(shipY==0)
     {
-    score=score+1;
-    shipY=240;
+        {
+    level=level+1;
+    shipY=600;
+    }
+    {
+    score=score+0;
+    shipY=600;
+    }
     }
     if(counter>1800)
     {
-    shipX=150;
+    shipX=300;
     shipY=0;
     }
-    ellipse(a,160,10,10);
-    a=a-5;
+    fill(255,255,250);
+     ellipse(a,160,10,10);
+    a=a-8;
     if(a<0)
     {
-    a=300;
+    a=600;
     }
  
      ellipse(c,70,10,10);
-    c=c-2;
+    c=c-9;
     if(c<0)
     {
-    c=300;
+    c=600;
     }
     ellipse(b,100,10,10);
-    b=b+7;
-    if(b>300)
+    b=b+10;
+    if(b>600)
     {
     b=0;
     }
-        ellipse(d,230,10,10);
-    d=d+3;
-    if(d>300)
+        ellipse(d,270,10,10);
+    d=d+7;
+    if(d>600)
     {
     d=0;
     }
+    ellipse(e,460,10,10);
+    e=e-11;
+    if(e<0)
+    {
+    e=600;
+    }
+     ellipse(f,370,10,10);
+    f=f-4;
+    if(f<0)
+    {
+    f=600;
+    }
+    ellipse(g,400,10,10);
+    g=g+6;
+    if(g>600)
+    {
+    g=0;
+    }
+    
+    ellipse(h,530,10,10);
+    h=h+5;
+    if(h>600)
+    {
+    h=0;
+    }
       }
-

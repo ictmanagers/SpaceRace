@@ -2,54 +2,74 @@ int score= 0;
 int level= 0;
 int a= 0;
 int b= 0;
+int c= 0;
+int d= 0;
 int shipX=150;
 int shipY=240;
 int counter=0;
 PImage ship;
 
 void setup(){
-size(300,300);
-ship=loadImage("rocket.png");
-
-}
+    size(300,300);
+    ship=loadImage("rocket.png");
+    }
+    
 void draw(){
-
 background(0);
 image(ship,shipX,shipY,30,50);
 counter=counter+1;
-fill(0);
+fill(100,200,100);
 textSize(40);
-
 text("SPACE RACE", 15, 30);
 fill(255, 255, 255);
-
 textSize(15);
 text("level: " + score,220,280);
 text("score: " + score,220,260);
-
 if(keyPressed==true){
-shipY=shipY-3;
-}
-if((keyPressed==false)&&(shipY<0)){
-shipY=0;
-}
-if(keyPressed==false){
-shipY=shipY-3;
-}
-if(shipY==0){
-score=score+1;
-shipY=240;
-}
-if(counter>1800){
-shipX=150;
-shipY=0;
-}
-ellipse(a,70,10,10);
-a=a-6;
-if(a<0){
-a=300;}
-ellipse(b,200,10,10);
-b=b+6;
-if(b>300){
-b=0;}
-}
+    shipY=shipY-3;
+    }
+    if((keyPressed==false)&&(shipY<0))
+    {
+    shipY=0;
+    }
+    if(keyPressed==false)
+    {
+    shipY=shipY-3;
+    }
+    if(shipY==0)
+    {
+    score=score+1;
+    shipY=240;
+    }
+    if(counter>1800)
+    {
+    shipX=150;
+    shipY=0;
+    }
+    ellipse(a,160,10,10);
+    a=a-5;
+    if(a<0)
+    {
+    a=300;
+    }
+ 
+     ellipse(c,70,10,10);
+    c=c-2;
+    if(c<0)
+    {
+    c=300;
+    }
+    ellipse(b,100,10,10);
+    b=b+7;
+    if(b>300)
+    {
+    b=0;
+    }
+        ellipse(d,230,10,10);
+    d=d+3;
+    if(d>300)
+    {
+    d=0;
+    }
+      }
+
